@@ -1,0 +1,124 @@
+---
+layout: page
+title: Liên Hệ
+permalink: /lien-he/
+---
+
+<section
+  id="page-title"
+  data-bg-parallax="{{ site.baseurl }}/assets/images/about/bg-1.svg"
+>
+  <div class="bg-overlay"></div>
+  <div class="container">
+    <div class="page-title">
+      <h1 class="text-uppercase text-medium">{{ page.title }}</h1>
+      <div class="breadcrumb">
+        <ul>
+          <li><a href='{{ "/" | relative_url }}'>Trang chủ</a></li>
+          <li class="active">
+            <a href="{{ site.baseurl }}{{ page.permalink }}"
+              >{{ page.title }}</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h3 class="text-uppercase">Liên Hệ NamGD.com</h3>
+        <p>
+          NamGD.com cung cấp giải pháp linh hoạt đáp ứng mọi yêu cầu của từng
+          khách hàng ở nhiều khía cạnh khác nhau.
+        </p>
+        <p>
+          Vui lòng cho chúng tôi một cơ hội tư vấn và giúp bạn thực hiện website
+          trở nên chuyên nghiệp.
+        </p>
+        <div class="row m-t-40">
+          <div class="col-lg-12">
+            <address>
+              <i class="fa fa-home"></i> {{ site.address }}<br />
+              <abbr title="Số điện thoại NamGD.com"
+                ><i class="icon-phone-call"></i> {{ site.phone }}
+              </abbr>
+            </address>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <form
+          class="widget-contact-form"
+          novalidate
+          action="include/contact-form.php"
+          role="form"
+          method="post"
+        >
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="name">Họ tên</label>
+              <input
+                type="text"
+                aria-required="true"
+                name="widget-contact-form-name"
+                required
+                class="form-control required name"
+              />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="tel">Số điện thoại</label>
+              <input
+                type="tel"
+                aria-required="true"
+                name="widget-contact-form-tel"
+                required
+                class="form-control required tel"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-12">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                aria-required="true"
+                name="widget-contact-form-email"
+                required
+                class="form-control required email"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Nội dung</label>
+            <textarea
+              type="text"
+              name="widget-contact-form-message"
+              required
+              rows="5"
+              class="form-control required"
+            ></textarea>
+          </div>
+
+          <button class="btn" type="submit" id="form-submit">
+            <i class="fa fa-paper-plane"></i>&nbsp;Gửi tin nhắn
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="no-padding">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14901.08252280015!2d105.79202046856932!3d20.981786111402805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acc3ae37fc47%3A0x607ded9d4d1d1182!2zVHJp4buBdSBLaMO6YywgVMOibiBUcmnhu4F1LCBUaGFuaCBUcsOsLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1621529114281!5m2!1svi!2s"
+    width="100%"
+    height="450"
+    style="border: 0"
+    allowfullscreen=""
+    loading="lazy"
+  ></iframe>
+</section>

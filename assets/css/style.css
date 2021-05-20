@@ -16910,8 +16910,8 @@ body[data-bg-image] {
 
 /* My CSS */
 .service__box img {
-    width: 100px;
-    height: auto;
+    height: 90px;
+    width: auto;
     margin-bottom: 20px;
 }
 
@@ -16975,4 +16975,16 @@ body[data-bg-image] {
 .table-price>tbody>tr>td>.fa-check-circle {
     color: #2aa200;
 }
+
+@media (max-width: 768px) {
+    .table-price {
+        display: block;
+        overflow-x: scroll;
+        width: 100% !important;
+    }
+}
 /* end table-price */
+
+.box-fancy.reason [class*="col-"] {
+    padding: 2% !important;
+}
