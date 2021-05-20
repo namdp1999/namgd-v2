@@ -1,0 +1,27 @@
+---
+permalink: /404.html
+layout: default
+title: 404 Error
+---
+
+<section
+  id="page-title"
+  data-bg-parallax="{{ site.baseurl }}/assets/images/404.svg"
+>
+  <div class="bg-overlay"></div>
+  <div class="container">
+    <div class="page-title">
+      <h1 class="text-uppercase text-medium">{{ page.title }}</h1>
+      <div class="breadcrumb">
+        <ul>
+          <li><a href='{{ "/" | relative_url }}'>Trang chủ</a></li>
+          <li class="active">
+            <a href="{{ site.baseurl }}{{ page.permalink }}"
+              >{{ page.title }}</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
