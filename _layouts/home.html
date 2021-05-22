@@ -14,6 +14,7 @@ layout: default
     title="{{ slide.title | escape }}"
     class="slide kenburns"
     data-bg-video="{{ site.baseurl }}/assets/images/slider/{{ slide.image | escape }}"
+    preload="none"
   >
     <div class="bg-overlay" style="opacity: 0.8"></div>
     <div class="container">
@@ -52,7 +53,7 @@ layout: default
         </div>
       </div>
       <div class="col-lg-6 text-center">
-        <video loop autoplay muted>
+        <video loop autoplay muted preload="none">
           <source
             src="{{ site.baseurl }}/assets/images/home/website.webm"
             preload="none"
@@ -262,6 +263,7 @@ layout: default
   class="p-t-100 p-b-100"
   data-bg-parallax="{{ site.baseurl }}/assets/images/parallax.webp"
   data-animate="fadeInUp"
+  preload="none"
 >
   <div class="container xs-text-center sm-text-center text-light">
     <div class="row">
