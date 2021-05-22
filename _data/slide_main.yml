@@ -6,7 +6,7 @@ slidemain:
           NamGD.com cung cấp dịch vụ Thiết Kế Web trọn gói giá rẻ với giao diện
           đẹp, độc đáo, sáng tạo. Hệ thống tính năng website đầy đủ, mang tính
           ứng dụng cao và phù hợp với từng cá nhân, doanh nghiệp.
-        image: dich-vu-website.svg
+        image: dich-vu-website.webm
         url: /dich-vu-website/
       - title: Dịch Vụ Thiết Kế Đồ Họa Chuyên Nghiệp
         description:
@@ -15,5 +15,23 @@ slidemain:
           trị cao về mặt thẩm mỹ mà phải ấn tượng, sáng tạo, mang lại giá trị
           biểu đạt về nội dung để phục vụ cho chiến dịch makerting, quảng cáo…
           của doanh nghiệp.
-        image: dich-vu-thiet-ke.svg
+        image: dich-vu-thiet-ke.webm
         url: /dich-vu-thiet-ke/
+      - title: Dịch Vụ Chỉnh Sửa Video Chuyên Nghiệp
+        description:
+          NamGD.com hiểu rõ được sự phát triển Đa truyền thông tương tác
+          (“interactive multimedia”, hay “rich media”) đang trở thành trào lưu
+          tiếp thị mới nhất hiện nay và được xem là một hình thức nội dung gắn
+          kết nên được tích hợp với các chiến lược tiếp thị của doanh nghiệp.
+          Trong đó video là một dạng hình thức thể hiện nội dung đang nhận được
+          sự yêu mến của khách hàng.
+        image: dich-vu-video.webm
+        url: /dich-vu-video/
+      - title: Dịch Vụ Tạo Mô Hình 3D Chuyên Nghiệp
+        description:
+          Những 3D Model được sử dụng vào trong phim trường, điện ảnh, thiết kế
+          đồ họa game, thiết kế kiến trúc và hàng ngàn ứng dụng có ích khác. Nếu
+          bạn cần làm một hoặc nhiều mô hình 3D để phục vụ cho công việc hãy
+          liên hệ ngay cho NamGD.com nhé.
+        image: dich-vu-3d-model.webm
+        url: /dich-vu-3d-model/
