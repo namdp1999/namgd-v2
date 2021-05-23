@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'vi' }}">
 
-  {%- include head.html -%}
+  {%- include_cached head.html -%}
 
   <body>
 
     <div class="body-inner">
 
-      {%- include header.html -%}
+      {%- include_cached header.html -%}
       
       {{ content }}
 
-      {%- include footer.html -%}
+      {%- include_cached footer.html -%}
 
     </div>
 
