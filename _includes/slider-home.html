@@ -1,0 +1,28 @@
+<div
+  id="slider"
+  class="inspiro-slider slider-fullscreen dots-creative"
+  data-fade="true"
+>
+  {% for item in site.data.slide_main.slidemain %} {% for slide in item.slides
+  %}
+  <div
+    title="{{ slide.title | escape }}"
+    class="slide"
+    data-bg-video="{{ site.baseurl }}/assets/images/slider/{{ slide.image | escape }}"
+    preload="none"
+  >
+    <div class="bg-overlay" style="opacity: 0.8"></div>
+    <div class="container">
+      <div class="slide-captions text-center text-light">
+        <h1 title="{{ slide.title | escape }}">{{ slide.title | escape }}</h1>
+        <p>{{ slide.description | escape }}</p>
+        <div>
+          <a href="{{ slide.url | relative_url }}" class="btn btn-ct-black"
+            >Xem Chi Tiết</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %} {% endfor %}
+</div>
