@@ -8,7 +8,7 @@
   <div class="header-inner">
     <div class="container">
       <div id="logo">
-        <a href='{{ "/" | relative_url }}'>
+        <a href='{{ "/" | relative_url }}' alt="{{ site.title }}">
           <img
             width="160px"
             height="39.75px"
@@ -56,11 +56,25 @@
         <div class="container">
           <nav>
             <ul>
-              <li><a href='{{ "/" | relative_url }}'>Trang Chủ</a></li>
-              <li><a href="{{ site.baseurl }}/gioi-thieu/">Giới Thiệu</a></li>
+              <li>
+                <a
+                  href='{{ "/" | relative_url }}'
+                  alt="Trang Chủ | {{ site.title }}"
+                  >Trang Chủ</a
+                >
+              </li>
+              <li>
+                <a
+                  href="{{ site.baseurl }}/gioi-thieu/"
+                  alt="Giới Thiệu | {{ site.title }}"
+                  >Giới Thiệu</a
+                >
+              </li>
               {% for item in site.data.navigation_list.dichvuthietke %}
               <li class="dropdown">
-                <a href="{{ item.url | relative_url }}"
+                <a
+                  href="{{ item.url | relative_url }}"
+                  alt="{{ item.title | escape }}"
                   >{{ item.title | escape }}
                   <i
                     class="fa fa-angle-down"
@@ -71,7 +85,9 @@
                 <ul class="dropdown-menu">
                   {% for entry in item.submenu %}
                   <li>
-                    <a href="{{ entry.url | relative_url }}"
+                    <a
+                      href="{{ entry.url | relative_url }}"
+                      alt="{{ entry.page | escape }}"
                       >{{ entry.page | escape }}</a
                     >
                   </li>
@@ -81,7 +97,9 @@
               {% endfor %} {% for item in
               site.data.navigation_list.dichvuwebsite %}
               <li class="dropdown">
-                <a href="{{ item.url | relative_url }}"
+                <a
+                  href="{{ item.url | relative_url }}"
+                  alt="{{ item.title | escape }}"
                   >{{ item.title | escape }}
                   <i
                     class="fa fa-angle-down"
@@ -92,7 +110,9 @@
                 <ul class="dropdown-menu">
                   {% for entry in item.submenu %}
                   <li>
-                    <a href="{{ entry.url | relative_url }}"
+                    <a
+                      href="{{ entry.url | relative_url }}"
+                      alt="{{ entry.page | escape }}"
                       >{{ entry.page | escape }}</a
                     >
                   </li>
@@ -102,7 +122,9 @@
               {% endfor %} {% for item in site.data.navigation_list.dichvuvideo
               %}
               <li class="dropdown">
-                <a href="{{ item.url | relative_url }}"
+                <a
+                  href="{{ item.url | relative_url }}"
+                  alt="{{ item.title | escape }}"
                   >{{ item.title | escape }}
                   <i
                     class="fa fa-angle-down"
@@ -113,7 +135,9 @@
                 <ul class="dropdown-menu">
                   {% for entry in item.submenu %}
                   <li>
-                    <a href="{{ entry.url | relative_url }}"
+                    <a
+                      href="{{ entry.url | relative_url }}"
+                      alt="{{ entry.page | escape }}"
                       >{{ entry.page | escape }}</a
                     >
                   </li>
@@ -122,11 +146,19 @@
               </li>
               {% endfor %}
               <li>
-                <a href="{{ site.baseurl }}/dich-vu-3d-model/"
+                <a
+                  href="{{ site.baseurl }}/dich-vu-3d-model/"
+                  alt="Dịch Vụ 3D Model"
                   >Dịch Vụ 3D Model</a
                 >
               </li>
-              <li><a href="{{ site.baseurl }}/lien-he/">Liên Hệ</a></li>
+              <li>
+                <a
+                  href="{{ site.baseurl }}/lien-he/"
+                  alt="Liên Hệ | {{ site.title }}"
+                  >Liên Hệ</a
+                >
+              </li>
             </ul>
           </nav>
         </div>
