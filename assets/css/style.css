@@ -10250,7 +10250,7 @@ a.btn:not([href]):not([tabindex]) {
     text-transform: uppercase;
     background-color: #E96060;
     border-color: #E96060;
-    border-width: 1px;
+    border-width: 2px;
     border-style: solid;
     color: #fff;
     transition: all 0.3s;
@@ -16987,4 +16987,12 @@ body[data-bg-image] {
 
 .box-fancy.reason [class*="col-"] {
     padding: 2% !important;
+}
+
+#header .header-inner #logo a > img {
+    filter: brightness(0) invert(1);
+}
+
+#header.header-sticky .header-inner #logo a > img {
+    filter: none;
 }

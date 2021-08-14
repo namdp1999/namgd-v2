@@ -28,8 +28,8 @@ dichvuwebsite:
     submenu:
       - page: Thiết kế Website
         url: /dich-vu-website/thiet-ke-website/
-      - page: Kho giao diện
-        url: /dich-vu-website/kho-giao-dien/
+      # - page: Kho giao diện
+      #   url: /dich-vu-website/kho-giao-dien/
       - page: Thiết kế Landing Page
         url: /dich-vu-website/thiet-ke-landing-page/
       - page: Quản trị và chăm sóc website
