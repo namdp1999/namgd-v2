@@ -16068,6 +16068,7 @@ body.breakpoint-xs .grid li {
     list-style: none;
     border-bottom: 1px solid #eaeceb;
     line-height: 42px;
+    font-weight: 500;
 }
 .pricing-table .plan-list ul li:last-child {
     border: none;
@@ -16995,4 +16996,10 @@ body[data-bg-image] {
 
 #header.header-sticky .header-inner #logo a > img {
     filter: none;
+}
+
+.pricing-table .plan .plan-header h5.plan-price {
+    font-size: 34px;
+    padding: 0;
+    line-height: 1.3;
 }

@@ -1,0 +1,45 @@
+<section class="p-t-0">
+  <div class="container">
+    <div
+      class="heading-text heading-section text-center"
+      data-animate="fadeInUp"
+    >
+      <h2>SẢN PHẨM ĐÃ THỰC HIỆN</h2>
+      <span class="lead">
+        Dưới đây là một số sản phẩm gần đây chúng tôi đã thực hiện.
+      </span>
+    </div>
+  </div>
+  <div class="portfolio" data-animate="fadeInUp">
+    <div id="portfolio" class="grid-layout portfolio-4-columns">
+      {% for item in site.data.portfolio.portfolio %} {% for por in
+      item.portfolio-list %}
+      <div class="portfolio-item img-zoom ct-photography ct-marketing ct-media">
+        <div class="portfolio-item-wrap">
+          <div class="portfolio-image">
+            <span
+              ><img
+                src="{{ site.baseurl }}/assets/images/portfolio/thumb/bg-thumb.svg"
+                width="375px"
+                height="250px"
+                data-src="{{ site.baseurl }}/assets/images/portfolio/thumb/{{ por.image | escape }}"
+                alt="{{ por.title | escape }}"
+                class="lazyload"
+                title="{{ por.title | escape }}"
+            /></span>
+          </div>
+          <div class="portfolio-description">
+            <a
+              title="{{ por.title | escape }}"
+              data-lightbox="image"
+              href="{{ site.baseurl }}/assets/images/portfolio/{{ por.image | escape }}"
+            >
+              <i class="icon-maximize"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      {% endfor %} {% endfor %}
+    </div>
+  </div>
+</section>
