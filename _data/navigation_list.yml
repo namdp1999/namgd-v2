@@ -2,19 +2,19 @@ dichvuthietke:
   - title: Dịch Vụ Thiết Kế
     url: /dich-vu-thiet-ke/
     submenu:
-      - page: Thiết kế logo
+      - page: Thiết kế Logo
         url: /dich-vu-thiet-ke/thiet-ke-logo/
-      - page: Thiết kế profile
+      - page: Thiết kế Profile
         url: /dich-vu-thiet-ke/thiet-ke-profile/
-      - page: Thiết kế catalogue
+      - page: Thiết kế Catalogue
         url: /dich-vu-thiet-ke/thiet-ke-catalogue/
-      - page: Thiết kế brochure
+      - page: Thiết kế Brochure
         url: /dich-vu-thiet-ke/thiet-ke-brochure/
       - page: Thiết kế Card
         url: /dich-vu-thiet-ke/thiet-ke-card/
-      - page: Thiết kế menu
+      - page: Thiết kế Menu
         url: /dich-vu-thiet-ke/thiet-ke-menu/
-      - page: Thiết kế banner
+      - page: Thiết kế Banner
         url: /dich-vu-thiet-ke/thiet-ke-banner/
       - page: Thiết kế Infographic
         url: /dich-vu-thiet-ke/thiet-ke-infographic/
@@ -32,7 +32,7 @@ dichvuwebsite:
       #   url: /dich-vu-website/kho-giao-dien/
       - page: Thiết kế Landing Page
         url: /dich-vu-website/thiet-ke-landing-page/
-      - page: Quản trị và chăm sóc website
+      - page: Quản trị và Chăm sóc website
         url: /dich-vu-website/quan-tri-va-cham-soc-website/
 dichvuvideo:
   - title: Dịch Vụ Video
