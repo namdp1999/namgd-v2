@@ -16062,7 +16062,7 @@ body.breakpoint-xs .grid li {
 .pricing-table .plan-list ul {
     display: table;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 20px;
 }
 .pricing-table .plan-list ul li {
     list-style: none;
