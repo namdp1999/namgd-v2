@@ -123,7 +123,7 @@ section.dark,
     margin-bottom: 1rem;
 }
 #page-title .page-title > span {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 14px;
 }
 #page-title .breadcrumb {
@@ -951,7 +951,7 @@ section.dark,
     color: #747474;
     float: left;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 500;
     position: relative;
 }
 .topbar-dropdown .title {
@@ -1770,7 +1770,7 @@ section.dark,
     text-transform: none;
     display: block;
     opacity: 0.5;
-    font-weight: 400;
+    font-weight: 500;
     margin: 0;
     margin-top: 0;
     margin-bottom: 0;
@@ -3422,7 +3422,7 @@ body.side-panel-static #wrapper .container {
     display: block;
     padding: 4px 10px;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 500;
 }
 .page-menu nav > ul > li .dropdown-menu.menu-last {
     right: 0;
@@ -3885,7 +3885,7 @@ h6:not(:last-child),
     margin-bottom: 6px;
 }
 .lead {
-    font-weight: 400;
+    font-weight: 500;
 }
 @media all and (max-width: 767px) {
     h1,
@@ -3904,7 +3904,7 @@ h6:not(:last-child),
         line-height: 1.85714286em;
     }
     .lead {
-        font-size: 1.35714286em;
+        font-size: 1.2em;
         line-height: 1.68421053em;
     }
 }
@@ -3914,7 +3914,7 @@ h6:not(:last-child),
 p {
     font-size: 1rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     text-transform: none;
     line-height: 1.7;
     letter-spacing: 0;
@@ -4107,7 +4107,7 @@ h6.font-parisienne {
 .inspiro-slider .slide .slide-captions > p {
     color: #fff;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 40px;
 }
 .inspiro-slider .slide .slide-captions .text-dark.strong::after,
@@ -4230,13 +4230,13 @@ h6.font-parisienne {
     }
     .inspiro-slider .slide .slide-captions h1,
     .inspiro-slider .slide .slide-captions h2 {
-        font-size: 40px;
-        line-height: 40px;
+        font-size: 30px;
+        line-height: 1.3;
         margin-bottom: 14px;
     }
     .inspiro-slider .slide .slide-captions > p {
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 24px;
         margin-bottom: 16px;
     }
@@ -5019,7 +5019,7 @@ h6.font-parisienne {
     color: #484848;
     font-size: 13px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0;
     line-height: 15px;
     text-transform: capitalize;
@@ -5358,7 +5358,7 @@ h6.font-parisienne {
 }
 .project-description h3 {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 20px;
 }
 .portfolio-ajax-page [class*="col-"] {
@@ -5626,7 +5626,7 @@ h6.font-parisienne {
     width: 100%;
 }
 .single-post .post-item .post-tags a {
-    font-weight: 400;
+    font-weight: 500;
     color: #484848;
     border: 1px solid #e6e8eb;
     border-radius: 4px;
@@ -5866,7 +5866,7 @@ h6.font-parisienne {
     border-top: 1px solid #f7f9fb;
 }
 .post-thumbnail ~ .post-thumbnail-list .post-thumbnail-entry .post-thumbnail-content a {
-    font-weight: 400;
+    font-weight: 500;
     opacity: 0.7;
     line-height: 20px;
 }
@@ -6122,7 +6122,7 @@ h6.font-parisienne {
 .product .product-price del {
     display: block;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 500;
     margin: -20px 0 -4px;
     opacity: 0.6;
 }
@@ -6313,7 +6313,7 @@ h6.font-parisienne {
     cursor: pointer;
     display: block;
     font-size: 1.2em;
-    font-weight: 400;
+    font-weight: 500;
     height: 40px;
     line-height: 37px;
     margin: 0;
@@ -6462,7 +6462,7 @@ h6.font-parisienne {
     background-color: #f8f9fa;
     font-size: 14px;
     line-height: 32px;
-    font-weight: 400;
+    font-weight: 500;
     font-family: 'Quicksand', sans-serif;
 }
 #footer a:not(.btn):not(:hover) {
@@ -6472,7 +6472,7 @@ h6.font-parisienne {
     font-family: 'Quicksand', sans-serif;
 }
 #footer a:not(.btn) {
-    font-weight: 400;
+    font-weight: 500;
 }
 #footer .footer-content {
     padding: 60px 0 40px;
@@ -6520,7 +6520,7 @@ h6.font-parisienne {
 .dark #footer a:not(.btn),
 #footer.inverted a:not(.btn),
 #footer.dark a:not(.btn) {
-    font-weight: 400;
+    font-weight: 500;
 }
 .dark #footer a:not(.btn):not(:hover),
 #footer.inverted a:not(.btn):not(:hover),
@@ -6611,7 +6611,7 @@ h6.font-parisienne {
     border: 2px solid #e6e8eb;
     border-radius: 50px;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 1px;
     outline: none;
     padding: 5px 14px;
@@ -6691,7 +6691,7 @@ body.breakpoint-sm .col-3 .flickr-widget img .widget-instagram img {
 .widget.widget-newsletter label.error {
     color: #e42c3e;
     display: none !important;
-    font-weight: 400;
+    font-weight: 500;
     margin-top: 5px;
 }
 .background-dark .widget.widget-newsletter .input-group-prepend {
@@ -7453,7 +7453,7 @@ body.breakpoint-xs .page-error-404 {
 .responsive-utilities th small {
     color: #999;
     display: block;
-    font-weight: 400;
+    font-weight: 500;
 }
 .responsive-utilities td.is-visible {
     background-color: #dff0d8 !important;
@@ -7894,7 +7894,7 @@ td.fc-today {
 .p-dropdown {
     float: left;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 500;
     position: relative;
 }
 .p-dropdown a:not(.btn) {
@@ -9880,7 +9880,7 @@ div.dataTables_wrapper div.dataTables_length select {
     background: 0 0;
     padding: 8px 12px;
     margin-bottom: 10px;
-    font-weight: 400;
+    font-weight: 500;
     border-color: transparent;
 }
 .daterangepicker .ranges .range_inputs {
@@ -10017,7 +10017,7 @@ input.daterange:after,
 input.dates:after {
     font-family: inspiro-icons !important;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-variant: normal;
     text-transform: none;
     line-height: 1;
@@ -10125,7 +10125,7 @@ input.dates:after {
 }
 .alert .close {
     color: #fff;
-    font-weight: 300;
+    font-weight: 400;
     padding: 12px 18px;
 }
 .alert > .alert-icon {
@@ -11239,7 +11239,7 @@ a.btn:not([href]):not([tabindex]).disabled {
 .card .card-header .card-subtitle {
     font-size: 1rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     color: #484848;
 }
 .card .card-header-title {
@@ -11269,7 +11269,7 @@ a.btn:not([href]):not([tabindex]).disabled {
     font-size: 40px;
     text-transform: capitalize;
     line-height: 46px;
-    font-weight: 300;
+    font-weight: 400;
 }
 .heading > h1,
 .heading > h2,
@@ -11357,7 +11357,7 @@ a.btn:not([href]):not([tabindex]).disabled {
 }
 .heading-text.heading-section p {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
 }
 .heading-text.heading-section p span {
     font-weight: 600;
@@ -11369,7 +11369,7 @@ a.btn:not([href]):not([tabindex]).disabled {
 }
 .heading-text.heading-plain p {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
 }
 .heading-text.heading-plain p span {
     font-weight: 600;
@@ -11382,7 +11382,7 @@ a.btn:not([href]):not([tabindex]).disabled {
 }
 .heading-text.heading-light p {
     font-size: 17px;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 20px;
 }
 .heading-text.heading-light p span {
@@ -11396,7 +11396,7 @@ a.btn:not([href]):not([tabindex]).disabled {
 }
 .heading-text.heading-vintage p {
     font-size: 17px;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 20px;
 }
 .heading-text.heading-vintage p span {
@@ -11440,7 +11440,7 @@ a.btn:not([href]):not([tabindex]).disabled {
 }
 .heading-text.heading-small p {
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 20px;
 }
 @media (max-width: 1024px) {
@@ -11479,7 +11479,7 @@ a.btn:not([href]):not([tabindex]).disabled {
     .heading-text.heading-plain h2,
     .heading-text.heading-light h2,
     .heading-text.heading-section h2 {
-        font-size: 28px;
+        font-size: 20px;
         line-height: 1.3;
         margin-bottom: 16px;
     }
@@ -11852,7 +11852,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 @font-face {
     font-family: inspiro-icons;
     src: url(../webfonts/inspiro-icons92ed.ttf?ijzgpf) format("truetype"), url(../webfonts/inspiro-icons92ed.woff?ijzgpf) format("woff");
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     font-display: block;
 }
@@ -11860,7 +11860,7 @@ i:not(.fa):not(.fab):not(.far):not(.fas) {
     font-family: inspiro-icons !important;
     speak: none;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-variant: normal;
     text-transform: none;
     line-height: 1;
@@ -12749,7 +12749,7 @@ div.icon-box:before {
     margin: 0 0 20px 83px;
     font-size: 16px;
     line-height: 28px;
-    font-weight: 400;
+    font-weight: 500;
 }
 .icon-box-description > p {
     margin-bottom: 20px;
@@ -13186,7 +13186,7 @@ div.icon-box:before {
 .icon-boxx .icon-box-content h3 {
     font-size: 20px;
     color: #1f1f1f;
-    font-weight: 400;
+    font-weight: 500;
 }
 .icon-boxx .icon-box-content p {
     font-size: 1rem;
@@ -13609,7 +13609,7 @@ div.icon-box:before {
 .countdown span {
     display: block;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
     overflow: hidden;
     padding-top: 4px;
     position: relative;
@@ -14572,7 +14572,7 @@ select {
 .form-group label:not(.error) {
     font-size: 13px;
     letter-spacing: 0.04em;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 4px;
     color: #777;
 }
@@ -14914,7 +14914,7 @@ button::-moz-focus-inner {
 .mfp-close-btn-in .mfp-close {
     color: #a3a3a3;
     font-size: 37px;
-    font-weight: 300;
+    font-weight: 400;
     top: 5px;
     right: 5px;
 }
@@ -15581,7 +15581,7 @@ a.list-group-item.active.active {
 .breadcrumb {
     background-color: transparent;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0.5px;
     margin-bottom: 10px;
     display: block;
@@ -15739,7 +15739,7 @@ a[data-toggle] {
     display: block;
     font-size: 28px;
     line-height: 28px;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 20px;
 }
 .modal p {
@@ -15747,7 +15747,7 @@ a[data-toggle] {
     line-height: 26px;
     margin-top: 0;
     margin-bottom: 13px;
-    font-weight: 300;
+    font-weight: 400;
 }
 .modal-strip {
     background-color: #000;
@@ -16166,7 +16166,7 @@ body.breakpoint-lg .pricing-table .col-lg-2 .plan-list ul li {
     line-height: 22px;
     margin-bottom: 0;
     padding-bottom: 20px;
-    font-weight: 400;
+    font-weight: 500;
     margin-top: 10px;
 }
 .testimonial .testimonial-item > span {
