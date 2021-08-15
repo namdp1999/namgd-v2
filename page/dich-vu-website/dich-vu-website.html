@@ -18,27 +18,34 @@ website giá rẻ,
 giá thiết kế website,]
 ---
 
-<section
-  id="page-title"
-  data-bg-parallax="{{ site.baseurl }}/assets/images/slider/dich-vu-website.svg"
+<div
+  id="slider"
+  class="inspiro-slider slider-fullscreen dots-creative"
+  data-fade="true"
 >
-  <div class="bg-overlay"></div>
-  <div class="container">
-    <div class="page-title">
-      <h1 class="text-uppercase text-medium">{{ page.title }}</h1>
-      <div class="breadcrumb">
-        <ul>
-          <li><a href='{{ "/" | relative_url }}'>Trang chủ</a></li>
-          <li class="active">
-            <a href="{{ site.baseurl }}{{ page.permalink }}"
-              >{{ page.title }}</a
-            >
-          </li>
-        </ul>
+  <div
+    title="{{ page.title | escape }}"
+    class="slide kenburns"
+    data-bg-video="{{ site.baseurl }}/assets/images/slider/dich-vu-website.webm"
+  >
+    <div class="bg-overlay" style="opacity: 1"></div>
+    <div class="container">
+      <div class="slide-captions text-center text-light">
+        <h1 class="text-uppercase text-medium">{{ page.title }}</h1>
+        <div class="breadcrumb">
+          <ul>
+            <li><a href='{{ "/" | relative_url }}'>Trang chủ</a></li>
+            <li class="active">
+              <a href="{{ site.baseurl }}{{ page.permalink }}"
+                >{{ page.title }}</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-</section>
+</div>
 
 <!-- DỊCH VỤ -->
 <section class="box-fancy section-fullwidth no-padding">
