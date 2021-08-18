@@ -11,7 +11,14 @@
   <meta name="keywords" content="{{ page.keywords | join: ', ' | escape }}" />
   {% else %}
   <meta name="keywords" content="{{ site.keywords | join: ', ' | escape }}" />
-  {%endif %}
+  {%endif %} {% if page.imgshare %}
+  <meta property="og:image" content="{{ site.baseurl }}/{{ page.imgshare }}" />
+  {% else %}
+  <meta
+    property="og:image"
+    content="{{ site.baseurl }}/assets/images/img-share-fb.jpg"
+  />
+  {% endif %}
 
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link
