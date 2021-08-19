@@ -17021,3 +17021,11 @@ body[data-bg-image] {
         padding: 20px;
     }
 }
+
+@media (max-width: 1279px) and (min-width: 1025px) {
+    #mainMenu nav > ul > li > a {
+        padding: 10px 4px;
+        font-size: 11px;
+        letter-spacing: 0.3px;
+    }
+}
