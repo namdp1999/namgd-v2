@@ -12,7 +12,7 @@ layout: posts
               <div class="post-image">
                 <img
                   alt="{{ page.title }}"
-                  src="{{ site.baseurl }}/assets/images/blog/kien-thuc-kinh-doanh/{{ page.image }}"
+                  src="{{ site.baseurl }}/{{ page.imgshare }}"
                 />
               </div>
               <div class="post-item-description">
@@ -43,7 +43,7 @@ layout: posts
                     class="lazyload"
                     alt="{{ post.title }}"
                     src="{{ site.baseurl }}/assets/images/bg-thumb.svg"
-                    data-src="{{ site.baseurl }}/assets/images/blog/kien-thuc-kinh-doanh/{{ post.image }}"
+                    data-src="{{ site.baseurl }}/{{ post.imgshare }}"
                 /></a>
               </div>
               <div class="post-item-description">
@@ -71,8 +71,10 @@ layout: posts
         <div class="banner__right">
           <a href="{{ site.url }}/{{ page.bannerlink }}" target="_blank">
             <img
+              class="lazyload"
               alt="{{ page.title }}"
-              src="{{ site.baseurl }}/assets/images/banner-link/{{ page.bannerimg }}"
+              src="{{ site.baseurl }}/assets/images/bg-thumb.svg"
+              data-src="{{ site.baseurl }}/assets/images/banner-link/{{ page.bannerimg }}"
             />
           </a>
         </div>
