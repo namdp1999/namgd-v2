@@ -11,6 +11,10 @@
   <meta name="keywords" content="{{ page.keywords | join: ', ' | escape }}" />
   {% else %}
   <meta name="keywords" content="{{ site.keywords | join: ', ' | escape }}" />
+  {%endif %} {%if page.title %}
+  <meta property="og:title" content="{{ page.title }}" />
+  {% else %}
+  <meta property="og:title" content="{{ site.title }}" />
   {%endif %} {% if page.imgshare %}
   <meta property="og:image" content="{{ site.url }}/{{ page.imgshare }}" />
   {% else %}
