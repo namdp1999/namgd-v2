@@ -1,173 +1,190 @@
-<header
-  id="header"
-  data-transparent="true"
-  data-fullwidth="true"
-  data-responsive-fixed="true"
-  class="dark submenu-light"
->
-  <div class="header-inner">
-    <div class="container">
-      <div id="logo">
-        <a href='{{ "/" | relative_url }}' alt="{{ site.title }}">
-          <img
-            width="160px"
-            height="39.75px"
-            src="{{ site.baseurl }}/assets/images/logo.png"
-            alt="{{ site.title }}"
-          />
-        </a>
-      </div>
+<div class="header-inner">
+  <div class="container">
+    <div id="logo">
+      <a href='{{ "/" | relative_url }}' alt="{{ site.title }}">
+        <img
+          width="160px"
+          height="39.75px"
+          src="{{ site.baseurl }}/assets/images/logo.png"
+          alt="{{ site.title }}"
+        />
+      </a>
+    </div>
 
-      <div id="search">
-        <a
-          id="btn-search-close"
-          class="btn-search-close"
-          aria-label="Close search form"
-          ><i class="icon-x"></i
-        ></a>
-        <form class="search-form" action="#" method="get">
-          <input
-            class="form-control"
-            name="q"
-            type="text"
-            placeholder="Tìm kiếm..."
-          />
-          <span class="text-muted"
-            >Bắt đầu nhập và nhấn "Enter" hoặc "ESC" để đóng</span
-          >
-        </form>
-      </div>
+    <div id="search">
+      <a
+        id="btn-search-close"
+        class="btn-search-close"
+        aria-label="Close search form"
+        ><i class="icon-x"></i
+      ></a>
+      <form class="search-form" action="#" method="get">
+        <input
+          class="form-control"
+          name="q"
+          type="text"
+          placeholder="Tìm kiếm..."
+        />
+        <span class="text-muted"
+          >Bắt đầu nhập và nhấn "Enter" hoặc "ESC" để đóng</span
+        >
+      </form>
+    </div>
 
-      <div class="header-extras">
-        <ul>
-          <li>
-            <a id="btn-search" href='{{ "/" | relative_url }}'>
-              <i class="icon-search"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
+    <div class="header-extras">
+      <ul>
+        <li>
+          <a id="btn-search" href='{{ "/" | relative_url }}'>
+            <i class="icon-search"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
 
-      <div id="mainMenu-trigger">
-        <a class="lines-button x"><span class="lines"></span></a>
-      </div>
+    <div id="mainMenu-trigger">
+      <a class="lines-button x"><span class="lines"></span></a>
+    </div>
 
-      <div id="mainMenu">
-        <div class="container">
-          <nav>
-            <ul>
-              <li>
-                <a
-                  href='{{ "/" | relative_url }}'
-                  alt="Trang Chủ | {{ site.title }}"
-                  >Trang Chủ</a
-                >
-              </li>
-              <li>
-                <a
-                  href="{{ site.baseurl }}/gioi-thieu/"
-                  alt="Giới Thiệu | {{ site.title }}"
-                  >Giới Thiệu</a
-                >
-              </li>
-              {% for item in site.data.navigation_list.dichvuthietke %}
-              <li class="dropdown">
-                <a
-                  href="{{ item.url | relative_url }}"
-                  alt="{{ item.title | escape }}"
-                  >{{ item.title | escape }}
-                  <i
-                    class="fa fa-angle-down"
-                    data-toggle="dropdown"
-                    aria-hidden="true"
-                  ></i>
-                </a>
-                <ul class="dropdown-menu">
-                  {% for entry in item.submenu %}
-                  <li>
-                    <a
-                      href="{{ entry.url | relative_url }}"
-                      alt="{{ entry.page | escape }}"
-                      >{{ entry.page | escape }}</a
-                    >
-                  </li>
-                  {% endfor %}
-                </ul>
-              </li>
-              {% endfor %} {% for item in
-              site.data.navigation_list.dichvuwebsite %}
-              <li class="dropdown">
-                <a
-                  href="{{ item.url | relative_url }}"
-                  alt="{{ item.title | escape }}"
-                  >{{ item.title | escape }}
-                  <i
-                    class="fa fa-angle-down"
-                    data-toggle="dropdown"
-                    aria-hidden="true"
-                  ></i>
-                </a>
-                <ul class="dropdown-menu">
-                  {% for entry in item.submenu %}
-                  <li>
-                    <a
-                      href="{{ entry.url | relative_url }}"
-                      alt="{{ entry.page | escape }}"
-                      >{{ entry.page | escape }}</a
-                    >
-                  </li>
-                  {% endfor %}
-                </ul>
-              </li>
-              {% endfor %}
-              <!-- {% for item in site.data.navigation_list.dichvuvideo %}
-              <li class="dropdown">
-                <a
-                  href="{{ item.url | relative_url }}"
-                  alt="{{ item.title | escape }}"
-                  >{{ item.title | escape }}
-                  <i
-                    class="fa fa-angle-down"
-                    data-toggle="dropdown"
-                    aria-hidden="true"
-                  ></i>
-                </a>
-                <ul class="dropdown-menu">
-                  {% for entry in item.submenu %}
-                  <li>
-                    <a
-                      href="{{ entry.url | relative_url }}"
-                      alt="{{ entry.page | escape }}"
-                      >{{ entry.page | escape }}</a
-                    >
-                  </li>
-                  {% endfor %}
-                </ul>
-              </li>
-              {% endfor %} -->
-              <li>
-                <a href="{{ site.baseurl }}/dich-vu-video/" alt="Dịch Vụ Video"
-                  >Dịch Vụ Video</a
-                >
-              </li>
-              <li>
-                <a
-                  href="{{ site.baseurl }}/dich-vu-3d-model/"
-                  alt="Dịch Vụ 3D Model"
-                  >Dịch Vụ 3D Model</a
-                >
-              </li>
-              <li>
-                <a
-                  href="{{ site.baseurl }}/lien-he/"
-                  alt="Liên Hệ | {{ site.title }}"
-                  >Liên Hệ</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
+    <div id="mainMenu">
+      <div class="container">
+        <nav>
+          <ul>
+            <li>
+              <a
+                href='{{ "/" | relative_url }}'
+                alt="Trang Chủ | {{ site.title }}"
+                >Trang Chủ</a
+              >
+            </li>
+            <li>
+              <a
+                href="{{ site.baseurl }}/gioi-thieu/"
+                alt="Giới Thiệu | {{ site.title }}"
+                >Giới Thiệu</a
+              >
+            </li>
+            {% for item in site.data.navigation_list.dichvuthietke %}
+            <li class="dropdown">
+              <a
+                href="{{ item.url | relative_url }}"
+                alt="{{ item.title | escape }}"
+                >{{ item.title | escape }}
+                <i
+                  class="fa fa-angle-down"
+                  data-toggle="dropdown"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <ul class="dropdown-menu">
+                {% for entry in item.submenu %}
+                <li>
+                  <a
+                    href="{{ entry.url | relative_url }}"
+                    alt="{{ entry.page | escape }}"
+                    >{{ entry.page | escape }}</a
+                  >
+                </li>
+                {% endfor %}
+              </ul>
+            </li>
+            {% endfor %} {% for item in site.data.navigation_list.dichvuwebsite
+            %}
+            <li class="dropdown">
+              <a
+                href="{{ item.url | relative_url }}"
+                alt="{{ item.title | escape }}"
+                >{{ item.title | escape }}
+                <i
+                  class="fa fa-angle-down"
+                  data-toggle="dropdown"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <ul class="dropdown-menu">
+                {% for entry in item.submenu %}
+                <li>
+                  <a
+                    href="{{ entry.url | relative_url }}"
+                    alt="{{ entry.page | escape }}"
+                    >{{ entry.page | escape }}</a
+                  >
+                </li>
+                {% endfor %}
+              </ul>
+            </li>
+            {% endfor %}
+            <!-- {% for item in site.data.navigation_list.dichvuvideo %}
+            <li class="dropdown">
+              <a
+                href="{{ item.url | relative_url }}"
+                alt="{{ item.title | escape }}"
+                >{{ item.title | escape }}
+                <i
+                  class="fa fa-angle-down"
+                  data-toggle="dropdown"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <ul class="dropdown-menu">
+                {% for entry in item.submenu %}
+                <li>
+                  <a
+                    href="{{ entry.url | relative_url }}"
+                    alt="{{ entry.page | escape }}"
+                    >{{ entry.page | escape }}</a
+                  >
+                </li>
+                {% endfor %}
+              </ul>
+            </li>
+            {% endfor %} -->
+            <li>
+              <a href="{{ site.baseurl }}/dich-vu-video/" alt="Dịch Vụ Video"
+                >Dịch Vụ Video</a
+              >
+            </li>
+            <li>
+              <a
+                href="{{ site.baseurl }}/dich-vu-3d-model/"
+                alt="Dịch Vụ 3D Model"
+                >Dịch Vụ 3D Model</a
+              >
+            </li>
+            {% for item in site.data.navigation_list.blog %}
+            <li class="dropdown">
+              <a
+                href="{{ item.url | relative_url }}"
+                alt="{{ item.title | escape }}"
+                >{{ item.title | escape }}
+                <i
+                  class="fa fa-angle-down"
+                  data-toggle="dropdown"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <ul class="dropdown-menu">
+                {% for entry in item.submenu %}
+                <li>
+                  <a
+                    href="{{ entry.url | relative_url }}"
+                    alt="{{ entry.page | escape }}"
+                    >{{ entry.page | escape }}</a
+                  >
+                </li>
+                {% endfor %}
+              </ul>
+            </li>
+            {% endfor %}
+            <li>
+              <a
+                href="{{ site.baseurl }}/lien-he/"
+                alt="Liên Hệ | {{ site.title }}"
+                >Liên Hệ</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   </div>
-</header>
+</div>

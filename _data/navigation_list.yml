@@ -50,3 +50,19 @@ dichvuvideo:
         url: /dich-vu-video/video-animation/
       - page: Video Graphy
         url: /dich-vu-video/video-graphy/
+blog:
+  - title: Blog
+    url: /blog/
+    submenu:
+      - page: Kiến thức kinh doanh
+        url: /blog/kien-thuc-kinh-doanh/
+      # - page: Kinh nghiệm kinh doanh
+      #   url: /blog/kinh-nghiem-kinh-doanh/
+      # - page: Câu chuyện thành công
+      #   url: /blog/cau-chuyen-thanh-cong/
+      # - page: Mẹo hay
+      #   url: /blog/meo-hay/
+      # - page: Khuyến mãi
+      #   url: /blog/khuyen-mai/
+      # - page: Tin tức về NamGD.com
+      #   url: /blog/tin-tuc/

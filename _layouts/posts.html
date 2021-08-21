@@ -1,19 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'vi' }}">
-
   {%- include head.html -%}
 
   <body>
-
     <div class="body-inner">
-
-      {%- include header-page.html -%}
-      
-      {{ content }}
-
-      {%- include footer.html -%}
-
+      {%- include header-posts.html -%} {{ content }} {%- include footer.html
+      -%}
     </div>
-
   </body>
 </html>
