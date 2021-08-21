@@ -22,6 +22,30 @@ layout: posts
                     ><i class="far fa-calendar-alt"></i>{{ page.date | date:
                     "%d/%m/%Y" }}</span
                   >
+                  <div class="post-meta-share">
+                    <a
+                      class="btn btn-xs btn-slide btn-facebook"
+                      href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}.html"
+                      data-width="100"
+                      rel="nofollow"
+                      target="_blank"
+                      title="Chia sẻ lên Facebook"
+                    >
+                      <i class="fab fa-facebook-f"></i>
+                      <span>Facebook</span>
+                    </a>
+                    <a
+                      class="btn btn-xs btn-slide btn-twitter"
+                      href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}.html&via={{ site.twitter_username }}&related={{ site.twitter_username }}"
+                      rel="nofollow"
+                      data-width="100"
+                      target="_blank"
+                      title="Chia sẻ lên Twitter"
+                    >
+                      <i class="fab fa-twitter"></i>
+                      <span>Twitter</span>
+                    </a>
+                  </div>
                 </div>
                 <p class="detail-post__desc">{{ page.description }}</p>
                 <div class="detail-post__content">{{ content }}</div>
