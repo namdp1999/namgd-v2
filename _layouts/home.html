@@ -341,6 +341,51 @@ layout: default
 </section>
 <!-- End Ý kiến khách hàng -->
 
+<!-- Blog -->
+<section class="p-t-60">
+  <div class="container">
+    <div
+      class="heading-text heading-section text-center"
+      data-animate="fadeInUp"
+    >
+      <h2>BÀI VIẾT MỚI</h2>
+    </div>
+  </div>
+  <div class="container">
+    <div class="carousel" data-items="3">
+      {% for post in site.categories.blog limit:6 %}
+      <div class="post-item border">
+        <div class="post-item-wrap">
+          <div class="post-image">
+            <a href="{{ post.url }}.html">
+              <img
+                class="lazyload"
+                alt="{{ post.title }}"
+                src="{{ site.baseurl }}/assets/images/bg-thumb.svg"
+                data-src="{{ site.baseurl }}/assets/images/blog/kien-thuc-kinh-doanh/{{ post.image }}"
+            /></a>
+          </div>
+          <div class="post-item-description">
+            <span class="post-meta-date"
+              ><i class="fa fa-calendar-o"></i>{{ post.date | date: "%d/%m/%Y"
+              }}</span
+            >
+            <h2>
+              <a href="{{ post.url }}.html">{{ post.title }}</a>
+            </h2>
+            <p>{{ post.description }}</p>
+            <a href="{{ post.url }}.html" class="item-link"
+              >Đọc tiếp <i class="icon-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!-- End Blog -->
+
 <!-- clients -->
 {%- include clients.html -%}
 <!-- End clients -->

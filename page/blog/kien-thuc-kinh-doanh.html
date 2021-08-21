@@ -56,13 +56,13 @@ giá thiết kế website,]
       <div class="post-item border">
         <div class="post-item-wrap">
           <div class="post-image">
-            <a href="{{ post.url }}.html" title="{{ post.title }}">
+            <a href="{{ post.url }}.html">
               <img
-                title="{{ post.title }}"
+                class="lazyload"
                 alt="{{ post.title }}"
-                src="{{ site.baseurl }}/assets/images/blog/kien-thuc-kinh-doanh/{{ post.image }}"
-              />
-            </a>
+                src="{{ site.baseurl }}/assets/images/bg-thumb.svg"
+                data-src="{{ site.baseurl }}/assets/images/blog/kien-thuc-kinh-doanh/{{ post.image }}"
+            /></a>
           </div>
           <div class="post-item-description">
             <span class="post-meta-date"
