@@ -7,6 +7,16 @@
     type="image/x-icon"
     rel="icon"
   />
+
+  <!-- Title -->
+  {%if page.title %} {%if page.path contains '_posts' %}
+  <title>{{ page.title }}</title>
+  {% else %}
+  <title>{{ page.title }} | {{ site.title }}</title>
+  {%endif %} {% else %}
+  <title>{{ site.title }}</title>
+  {%endif %}
+
   <meta property="og:site_name" content="{{ site.title }}" />
   <meta property="og:locale" content="vi" />
 
