@@ -17059,7 +17059,7 @@ body[data-bg-image] {
     margin-left: 20px;
 }
 
-.post-item-description p {
+.post-item__desc {
     display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -17068,7 +17068,7 @@ body[data-bg-image] {
 }
 
 @media (min-width: 481px) {
-    .post-item .post-item-description > h2 {
+    h2.post-item__title {
         display: -webkit-box;
         overflow: hidden;
         text-overflow: ellipsis;
