@@ -40,6 +40,7 @@ giá thiết kế website,]
   </div>
 </section>
 
+<!-- Kiến thức kinh doanh -->
 <section id="page-content">
   <div class="container">
     <h2 class="mb-4">Kiến thức kinh doanh</h2>
@@ -84,3 +85,51 @@ giá thiết kế website,]
     <div class="line"></div>
   </div>
 </section>
+<!-- End Kiến thức kinh doanh -->
+
+<!-- Kinh nghiệm kinh doanh -->
+<section id="page-content">
+  <div class="container">
+    <h2 class="mb-4">Kinh nghiệm kinh doanh</h2>
+    <div class="carousel" data-items="3">
+      {% for post in site.categories.blog limit:9 %} {% if post.categories
+      contains "kinh-nghiem-kinh-doanh" %}
+      <div class="post-item border">
+        <div class="post-item-wrap">
+          <div class="post-image">
+            <a href="{{ post.url }}.html">
+              <img
+                class="lazyload"
+                alt="{{ post.title }}"
+                src="{{ site.baseurl }}/assets/images/bg-thumb.svg"
+                data-src="{{ site.baseurl }}/{{ post.imgshare }}"
+            /></a>
+          </div>
+          <div class="post-item-description">
+            <span class="post-meta-date"
+              ><i class="far fa-calendar-alt"></i>{{ post.date | date:
+              "%d/%m/%Y" }}</span
+            >
+            <h2 class="post-item__title">
+              <a href="{{ post.url }}.html">{{ post.title }}</a>
+            </h2>
+            <p class="post-item__desc">{{ post.description }}</p>
+            <a href="{{ post.url }}.html" class="item-link"
+              >Đọc tiếp <i class="icon-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      {% endif %} {% endfor %}
+    </div>
+    <div class="text-center m-t-50">
+      <a
+        href="{{ site.baseurl }}{{ page.permalink }}kien-thuc-kinh-doanh/"
+        class="btn btn-rounded btn-reveal btn-dark"
+        ><span>Xem thêm</span><i class="icon-chevron-right"></i
+      ></a>
+    </div>
+    <div class="line"></div>
+  </div>
+</section>
+<!-- End Kinh nghiệm kinh doanh -->

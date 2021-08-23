@@ -56,8 +56,8 @@ blog:
     submenu:
       - page: Kiến thức kinh doanh
         url: /blog/kien-thuc-kinh-doanh/
-      # - page: Kinh nghiệm kinh doanh
-      #   url: /blog/kinh-nghiem-kinh-doanh/
+      - page: Kinh nghiệm kinh doanh
+        url: /blog/kinh-nghiem-kinh-doanh/
       # - page: Câu chuyện thành công
       #   url: /blog/cau-chuyen-thanh-cong/
       # - page: Mẹo hay
