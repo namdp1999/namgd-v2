@@ -17059,6 +17059,10 @@ body[data-bg-image] {
     margin-left: 20px;
 }
 
+.detail-post__content strong {
+    color: #000;
+}
+
 .post-item__desc {
     display: -webkit-box;
     overflow: hidden;
