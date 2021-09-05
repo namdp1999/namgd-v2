@@ -63,29 +63,45 @@
         </div>
         <div class="col-lg-4">
           <form
-            class="widget-contact-form"
+            class="widget-contact-form form-contact-footer"
             novalidate
-            action=""
-            role="form"
+            action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdWXBPKG4IQIhNnHfY7wFyLDId2NQMYIcAdCBd1bguypc042A/formResponse"
+            onsubmit="return formContactFooter()" target="hidden_iframe-footer"
             method="post"
           >
             <div class="input-group mb-2">
               <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1"
+                <span class="input-group-text"
                   ><i class="fa fa-user"></i
                 ></span>
               </div>
               <input
                 type="text"
                 aria-required="true"
-                name="widget-contact-form-name"
+                required
+                name="entry.469158872"
                 class="form-control required name"
                 placeholder="Nhập tên của bạn"
               />
             </div>
             <div class="input-group mb-2">
               <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1"
+                <span class="input-group-text"
+                  ><i class="fa fa-phone"></i
+                ></span>
+              </div>
+              <input
+                type="tel"
+                aria-required="true"
+                required
+                name="entry.1106884678"
+                class="form-control required tel"
+                placeholder="Nhập số điện thoại của bạn"
+              />
+            </div>
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <span class="input-group-text"
                   ><i class="fa fa-envelope"></i
                 ></span>
               </div>
@@ -93,7 +109,7 @@
                 type="email"
                 aria-required="true"
                 required
-                name="widget-contact-form-email"
+                name="entry.1587628256"
                 class="form-control required email"
                 placeholder="Nhập email của bạn"
               />
@@ -101,18 +117,38 @@
             <div class="form-group mb-2">
               <textarea
                 type="text"
-                name="widget-contact-form-message"
+                required
+                name="entry.1191135861"
                 rows="5"
                 class="form-control required"
                 placeholder="Nội dung"
               ></textarea>
             </div>
             <div class="form-group">
-              <button class="btn btn-ct-black" type="submit" id="form-submit">
+              <button class="btn btn-ct-black" type="submit" name="submit">
                 <i class="fa fa-paper-plane"></i>&nbsp;Gửi ngay
               </button>
             </div>
           </form>
+
+          <div class="hidden-message-footer text-success" style="display: none;">Cảm ơn bạn đã liên hệ với chúng tôi. Chúng tôi sẽ phản hồi lại sớm nhất tới bạn!</div>
+
+          <iframe id="hidden_iframe-footer" name="hidden_iframe-footer" onload="if(submitted){}" style="display: none;"></iframe>
+
+          <script type="text/javascript">
+            var submitted = false;
+
+            function formContactFooter() {
+              submitted = true;
+              $('.blockform').toggle();
+              $('.hidden-message-footer').show();
+              $('.form-contact-footer button.btn').addClass('btn-success');
+              $('.form-contact-footer button.btn').removeClass('btn-ct-black');
+            }
+            $("iframe#hidden_iframe-footer").on('load', function() {
+              simpleCart.empty();
+            });
+          </script>
         </div>
       </div>
     </div>

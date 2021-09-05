@@ -52,10 +52,10 @@ permalink: /lien-he/
       </div>
       <div class="col-lg-6">
         <form
-          class="widget-contact-form"
+          class="widget-contact-form form-page-contact"
           novalidate
-          action="include/contact-form.php"
-          role="form"
+          action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdWXBPKG4IQIhNnHfY7wFyLDId2NQMYIcAdCBd1bguypc042A/formResponse"
+          onsubmit="return formContact()" target="hidden_iframe"
           method="post"
         >
           <div class="row">
@@ -64,7 +64,7 @@ permalink: /lien-he/
               <input
                 type="text"
                 aria-required="true"
-                name="widget-contact-form-name"
+                name="entry.469158872"
                 required
                 class="form-control required name"
               />
@@ -74,7 +74,7 @@ permalink: /lien-he/
               <input
                 type="tel"
                 aria-required="true"
-                name="widget-contact-form-tel"
+                name="entry.1106884678"
                 required
                 class="form-control required tel"
               />
@@ -86,7 +86,7 @@ permalink: /lien-he/
               <input
                 type="email"
                 aria-required="true"
-                name="widget-contact-form-email"
+                name="entry.1587628256"
                 required
                 class="form-control required email"
               />
@@ -96,17 +96,36 @@ permalink: /lien-he/
             <label for="message">Nội dung</label>
             <textarea
               type="text"
-              name="widget-contact-form-message"
+              name="entry.1191135861"
               required
               rows="5"
               class="form-control required"
             ></textarea>
           </div>
 
-          <button class="btn" type="submit" id="form-submit">
+          <button class="btn" type="submit" name="submit">
             <i class="fa fa-paper-plane"></i>&nbsp;Gửi tin nhắn
           </button>
         </form>
+
+        <div class="hidden-message text-success" style="display: none;">Cảm ơn bạn đã liên hệ với chúng tôi. Chúng tôi sẽ phản hồi lại sớm nhất tới bạn!</div>
+
+        <iframe id="hidden_iframe" name="hidden_iframe" onload="if(submitted){}" style="display: none;"></iframe>
+
+        <script type="text/javascript">
+          var submitted = false;
+
+          function formContact() {
+            submitted = true;
+            $('.blockform').toggle();
+            $('.hidden-message').show();
+            $('.form-page-contact button.btn').addClass('btn-success');
+          }
+          $("iframe#hidden_iframe").on('load', function() {
+            simpleCart.empty();
+          });
+        </script>
+
       </div>
     </div>
   </div>
